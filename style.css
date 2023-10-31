@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.navbar {
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
+.navbar>li {
+    display: inline-block;
+
+}
+
+.navbar>li>a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #150404;
+    margin-right: 20px;
+}
+
+.navbar>li>a:hover,.navbar>li>a.active {
+    color: red;
+}
+
+/* .navbar>li>a.active{
+    color: red;
+} */
+.active {
+    color: red;
+}
+
+.nav {
+    width: 80%;
+}
+
+.logo {
+    width: 20%;
+}
+
+.home-image {
+    position:relative;
+    background-image: url(wallstreet.jpg);
+    background-size:cover;
+    height: 500px;
+}
+
+.home-text{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+.home-text>a{
+    text-decoration: none;
+    background-color: darkred;
+    color: bisque;
+    padding: 10px 5px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.home-text>a:hover{
+    background-color: bisque;
+    color: darkred;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 12px;
+}
+
+.highlight{
+    color: darkred;
+    font-weight: 800px;
+    font-size: 35px;
+}
+
+.main-content{
+    display:flex;
+}
+
+.col-1{
+    width: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-2{
+    width: 40%;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+@media(max-width:425px){
+    .header {
+        display: block;
+    }   
+    
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .nav{
+        width: 100%;
+    }
+    .home-image{
+        background-position: bottom;
+    }
+    .home-text{
+        width: auto;
+        top: 40px;
+        right: 40px;
+        left: 40px;
+    }
+
+    .main-content{
+        display: block;
+    }
+
+    .col-1, .col-2 {
+        width: auto;
+    }
+}
+
+@media(min-width:768px){
+
+}
+
